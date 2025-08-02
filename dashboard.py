@@ -18,7 +18,7 @@ if uploaded_excel_file is None:
     st.stop() #it stops the execution of the script if no file is uploaded
 
 ##################################### // Load Data // ########################################
-@st.cache_date
+@st.cache_data
 def load_data(uploaded_file):
     df = pd.read_excel(uploaded_file)
     return df
